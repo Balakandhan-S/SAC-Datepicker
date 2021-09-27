@@ -1,0 +1,72 @@
+{
+	"name": "Date Picker",
+	"description": "The first step in creating a smart date picker",
+	"eula": "",
+	"vendor": "Accenture",
+	"license": "",
+	"id": "com.accenture.customDatePicker",
+	"newInstancePrefix": "custom_DatePicker",
+	"version": "1.0.0",
+	"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAAb1BMVEX///+ZmZl4dXdBPj9hYGGOjpE6ODo8OjwvLC0lISIpJSaMiooyLzH/cjMxLi9GREb/ZSk2MzV9fX1MSks4NjcrJyn/WR9ycnJRT1AtKiv/TRVdXF1ra2v7VCfJyMk+PD6tra+rqqtUUlU0MTNqaGpjxDg2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAKhJREFUGNM9z9EagiAMBeDpEGkWNAGhqFTq/Z8xwK/+q7PtZgeg6npEMcBPJ0d1Kmg6ZnFGRZcLESnR7tpoouuVSCPPZYHWee+XxTsrvQeYQrwV97tL5uZigMeoqucTUSnWEVBX4fWaW2BYz1W3bXsLDPldcD8MoYZ3glmMjNbGLJk5igDgnLTGHazdAPo1Gdms2bZXhRmbMuNR5rNWJuX075sMYg57jV94IQ2Xqt1atQAAAABJRU5ErkJggg==",
+	"webcomponents": [
+       				 {
+					"kind": "main",
+					"tag": "custom-datepicker",
+				            	"url": "https://balakandhan-s.github.io/SAC-Custom-Widget/custom_BarChart.js",
+            					"integrity": "",
+            					"ignoreIntegrity" : true
+        				},
+				{
+					"kind": "builder",
+					"tag": "custom-datepickerbuilder",
+					"url": "https://balakandhan-s.github.io/SAC-Custom-Widget/custom%20BarChart%20builder.js",
+					"integrity": "",
+					"ignoreIntegrity": true
+				}
+    			],
+	"properties": 	{
+			"theme": 	{
+					"type": "string",
+					"description": "Theme of the picker",
+					"default": "standard"
+				},
+			"datePicked":{
+					"type": "string",
+					"description": "date chosen",
+					"default": ""
+				},
+			"selectionType":{
+					"type": "string",
+					"description": "type of the picker",
+					"default": "single"
+				},
+			
+			},
+	"methods":	{
+			"setDate": {
+				"description": "Sets the chosen",
+				"parameters": [
+						{
+							"name": "newDate",
+							"type": "string",
+							"description": "date chosen to apply to the datePicked property"
+						}
+					],
+				"body": "this.datePicked = newDate;"
+				},
+			"setTheme": {
+				"description": "Sets the theme of the picker",
+				"parameters": [
+					{
+						"name": "newTheme",
+						"type": "string",
+						"description": "Theme of the Picker"
+					}
+				],
+				"body": "this.theme = newTheme;"
+				}
+			},
+	"events": 		{
+				
+			}
+}
